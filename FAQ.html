@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>FAQ - Ceadis</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+	<h1 id="topo"> </a> FAQ - Ceadis </h1>
+	<p>
+		<ol>
+				<li> <a href="#1"> Abrir chamado na Inovapar (Problema Portal) </a> </li>
+				<li> Criação de Usuário</li>
+					<ul>
+						<li> <a href="#2"> Criar usuário Portal </a> </li>
+						<li> <a href="#3"> Criar usuário SGA </a> </li>
+						<li> <a href="#4"> Criar usuário MHA </a> </li>
+					</ul>
+				<li> <a href="#5"> Finalizar Empenho </a> </li>
+				<li> <a href="#6"> Cadastrar itens no Portal </a> </li>
+				<li> <a href="#7"> Cadastrar SIAFISICO </a> </li>
+				<li> <a href="#8"> Ativar ou Inativar Artigos </a> </li>
+				<li> <a href="#9"> Abastecer pedidos </a> </li>
+				<li> <a href="#10"> Reimportar ordem com quantidade divergente </a> </li>
+				<li> <a href="#11"> Excluir ou cancelar pedido </a> </li>
+				<li> Realizar Checklist </li>
+					<ul>
+						<li> <a href="#12"> Checklist de Sistemas </a> </li>
+						<li> <a href="#13"> Checklist de Ruptura </a> </li>
+						<li> <a href="#14"> Checklist TRAM (DataSul11)</a> </li>
+					</ul>
+				
+				
+				<li> Gerar Relatório de Estoque </li>
+					<ul>
+						<li> <a href="#15"> Gerar Estoque MHA (ruptura) </a> </li>
+						<li> <a href="#16"> Gerar Estoque MHA (completo) </a> </li>
+					</ul>
+		</ol>
+    </p>
+
+	<h2 id="1">Abrir chamado na Inovapar (Problema Portal) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			<ul> Acessar o site da <a href="http://suporte.inovapar.com.br/index.php" target="_blank">Inovapar</a> </ul>
+			<ul>Clicar em "Open New Ticket"</ul>
+			<ul><strong>Help Topic:</strong> Suporte </ul>
+			<ul><strong>Email Adress:</strong> Sistemas@ceadis.org.br </ul>
+			<ul><strong>Full Name:</strong> Seu nome </ul>
+			<ul><strong>Phone Number:</strong> 36465626 <strong>Ext:</strong> 5627 </ul>
+			<ul><strong>Issue Summary:</strong> Resumo do problema </ul>
+			<ul><strong>Issue Details:</strong> Escrever os detalhes do problema </ul>
+			<ul><strong>Attachments::</strong> Caso haja algum <i>printscreen</i> das telas e/ou do erro clicar em <strong>Escolher Arquivo</strong> para colocar a imagem salva em seu computador.</ul>
+
+		</p>
+		
+	<h2 id="2">Criar usuário Portal <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a> </h2>
+		<p>
+			Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a> > Clique em Administração > Usuários e Permissões > 
+			Usuário > Procure pelo usuário modelo ao usuário à ser criado > Selecione-o> 
+			Clique em Criar > Substitua as informações do usuário modelo pelas informações do novo usuário (Senha: 123456) > Clique em Salvar 
+			> Logue com o usuário criado para verificação > Retorne ao seu usuário > Cadastro > Clientes > Pesquisar 
+			> Clique para que a visualização seja completa (16 no total) > Selecione o hospital que será dada a permissão ao usuário 
+			> Editar > No campo usuário procure pelo usuário criado > Selecione o usuário e clique em Salvar 
+			> Faça isso com todos os hospitais que o usuário tiver acesso.
+		</p>
+	
+	<h2 id="3">Criar usuário SGA <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Vá no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Administração > Usuário > Clique em Novo usuário
+			> Preencha as informações.
+		</p>
+	
+	<h2 id="4">Criar usuário MHA <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Vá no <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> >  Administração do Sistema > Controle de Acesso 
+			> Usuário > Pesquise pelo usuário modelo > Verifique as permissões do mesmo > Clique em Novo > Código: DRT do novo usuário 
+			> Descrição : Nome do usuário > Senha: 123456 > Status: ATV > E-mail > Expirar senha : Não > Expirar (Dias) : 0 
+			> Senha Forte: Não > Tamanho da senha: 0  > Permitir S. Simultâneas: Não > Tempo : 0 
+			> Tipo do acesso, seja para apenas coletor, apenas computador ou ambos > E o tipo de Autenticação, da mesma forma que o usuário modelo 
+			> Salvar Alterações.</br>
+			
+			<br>Em seguida vá em Administração do Sistema > Controle de Acesso > Usuários por Planta 
+			> Selecione a planta 326 e clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.</br>
+
+			<br>Se o usuário for possuir acesso Web, <a href="http://172.22.0.42/ArMHAzena/" target="_blank">MHA</a> 
+			> Administração do Sistema > Controle de Acesso > Permissões de Usuário > Selecione o grupo Administradores 
+			> Clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.</br>
+
+			<br>Caso o acesso seja apenas coletor <a href="http://172.22.0.42/ArMHAzena/" target="_blank">MHA</a> > Administração de Sistema > Controle de Acesso – PDA 
+			> Usuário Permissão Grupo > Clique em ADM > Selecione o usuário da caixa da direita e o envie para a caixa central > Salvar.
+		</p>
+	
+	<h2 id="5">Finalizar Empenho <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a> > Operação > Empenho > Procurar Empenho 
+			> Editar > Finalizar > OK.
+		</p>
+	
+	<h2 id="6">Cadastrar Itens no Portal <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Acesse a unidade de rede Z:</br>
+			Verifique em todos os hospitais nas pastas 
+			(_EstoqueWeb\Relatório\Ruptura de Estoque\Mês correspondente\</br>
+			E verifique se a planilha está com tamanho similar as demais, caso não esteja há algum problema. Caso esteja, OK.) 
+		</p>
+	
+	<h2 id="7">Cadastrar SIAFISICO <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Assim que solicitado pela qualidade, 
+			procurar o código do SIAFISICO no site do <a href="http://www.bec.sp.gov.br/BEC_Catalogo_UI/CatalogoPesquisa3.aspx?chave=" target="_blank"> BEC</a>
+			e digite o SIAFISICO no campo 'Código do Item'.
+			Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a> > Cadastro > Siafisico – Materiais > Clique no botão “Criar” 
+			> No campo código copie o código cujo qual foi solicitado o cadastro. 
+			No campo nome, copie o nome do endereço acima, e no campo descrição copie a descrição completa. 
+			> Clique em Salvar.
+			Entre no produto e cadastre o SIAFISICO no produto para que seja vinculado ao mesmo.
+		</p>
+	
+	<h2 id="8">Ativar ou Inativar Artigos <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Relatórios > Estoque > Ruptura de Estoque > Coloque a data referente ao relatório que deseja criar 
+			> Excel > Salva na pasta referente ao hospital. 
+			Verificar o relatório de ruptura Z:\X_EstoqueWeb\Relatório\Ruptura de Estoque\Mês atual\último dia de Operação).</br>
+		</p>
+	
+	<h2 id="9">Abastecer pedidos <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Ao inativar um item e o mesmo consta com pendência no abastecimento do mesmo, 
+			verifique o pedido e se ele for de uma data anterior a 3 dias, 
+			faça uma análise para verificar a possibilidade de abastecê-lo. Caso sim, vá em Portal > Operação > Abastecer Pedidos 
+			> Procure pelo pedido e clique em Marcar como Abastecido. Agora você poderá inativar o item.</br>
+		</p>
+	
+	<h2 id="10">Reimportar Ordem com quantidade divergente <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Operação > Empenho > Selecione o hospital referente a ordem 
+			> Operação > Empenho > Digite o número da OC / empenho > Selecione e clique em Consultar 
+			> Verifique as quantidades e as informações e confira junto ao documento pdf enviado anexado ao chamado 
+			> caso haja divergência verifique o empenho gerado pelo hospital no FileZila > Selecione o hospital 
+			> Entre na pasta referente aos arquivos de OC > Faça uma cópia local dos arquivos efetuados na data 
+			> procure pela OC que está divergente > Verifique se a mesma está correta 
+			>  Caso esteja envie-a para WinSCP para que suba novamente no servidor de forma correta 
+			
+			<h3> > P.S.: Verifique se a OC não consta agendamento > Caso a OC demore para ir ao portal verifique a tela de problemas (Operação > Problemas > Cole a OC no campo palavra-chave e veja o problema ocorrido) </h3>
+			<h3> > P.S.: Caso algum item esteja inativo, informe o usuário para que o mesmo entre em contato com a qualidade para que possa ativar novamente o item. > Assim, que efetuar o procedimento verifique se a divergência foi resolvida no portal. </h3>
+		</p>
+		
+	<h2 id="11">Excluir ou cancelar pedido <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Operação > Pedido > Selecione o hospital correspondente 
+			> procure o número do pedido > selecione o mesmo e clique em excluir > Selecione o motivo para a exclusão 
+			> Caso haja uma mensagem de erro > Retorne > Selecione o pedido > Editar > Altere a situação do pedido para “Cancelado” 
+			> Salve, o pedido será alterado para cancelado.
+		</p>
+		
+	<h2 id="12">Checklist de Sistemas <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			No <a href="http://172.22.0.33/" target="_blank">Portal</a>
+		</p>
+		
+	<h2 id="13">Checklist Ruptura <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Acesse a unidade de rede Z:
+			Verificar em todos os hospitais nas pastas 
+			<br>(_EstoqueWeb\Relatório\Ruptura de Estoque\Mês correspondente\
+			<br>E verifique se a planilha está com tamanho similar as demais, caso não esteja há algum problema. Caso esteja, OK.) 
+		</p>
+		
+	<h2 id="14">Checklist TRAM (DataSul11) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			Acesse o DataSul11 (T:\Publico\DATASUL\TOTVS11\DataSul 11.rdp):</br>
+			
+			<br>Login: matriz-2000\opr.dtsul.ceadis11 
+			<br>Senha: seconci</br>
+			
+			<br>Clique em Lembrar minhas credenciais, em seguida marque a opção não perguntar novamente e clique em Conectar.</br>
+
+			<br>Usuário: 26000084
+			<br>Senha: 123</br>
+
+			<br>Ferramentas > Executar Programa > \\secdts11apl\ERP\Especificos\ems206\esp\esft0009.r > OK</br>
+
+			Estabelecimento = 326
+			Serie: 1
+			Nota Fiscal: 
+			Emissão: Data dia ANTERIOR
+			
+			<br>Emitente:</br>
+			
+			<br>SP – 1271
+			<br>AM – 1048
+			<br>IS – 9
+			<br>CO – 16
+			<br>VA – 4</br>
+			
+			<br>\\172.16.0.56\Especificos\ems206\integracao\prod\arquivos - Saída dos arquivos</br>
+			
+			<br>Volta ao FTP, clica na unidade de rede referente (X:), em todos os hospitais acessa a unidade de 
+			rede mapeada onde os arquivos serão exportados e os importe na pasta do servidor FTP do hospital correspondente.</br>
+
+			<br>Retorne ao <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Checklist > Sistemas - TRAM > Preencha de acordo com os testes.</br>
+
+		</p>
+		
+	<h2 id="15">Gerar Estoque(Ruptura) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Relatórios > Estoque > Ruptura de Estoque > Coloque a data referente ao relatório que deseja criar 
+			> Excel > Salva na pasta referente ao hospital. 
+			Verificar o relatório de ruptura Z:\X_EstoqueWeb\Relatório\Ruptura de Estoque\Mês atual\último dia de Operação).</br>
+		</p>
+	
+	<h2 id="16">Gerar Estoque MHA (Completo) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+		<p>
+			No <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> > Relatórios > Estoque > Estoque básico> Clicar em Visualizar > selecionar o disquete localizado no canto superior esquerdo
+			> Selecione o formato MS Excel 97-2000> Clicar em ok> Abra o arquivo que foi gerado em Excel
+			> Salvar como > Selecione a pasta de destino> Salvar com o nome padrão.</br>
+		</p>
+			
+  </body>
+</html>
