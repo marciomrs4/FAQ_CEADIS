@@ -3,16 +3,19 @@
   <head>
     <meta charset="ISO-8859-1">
     <title>FAQ - Ceadis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
-	<h1 id="topo"> </a> FAQ - Ceadis </h1>
-	<p>
+  
+  <div class="container">
+	<h1 id="topo"><span class="label label-primary">FAQ - CEADIS </span></h1><br>
+	
 		<ol>
 				<li> <a href="#1"> Abrir chamado na Inovapar (Problema Portal) </a> </li>
 				<li> Criação de Usuário</li>
 					<ul>
-						<li> <a href="#2"> Criar usuário Portal </a> </li>
+						<li><a href="#2">Criar usuário Portal</a> </li>
 						<li> <a href="#3"> Criar usuário SGA </a> </li>
 						<li> <a href="#4"> Criar usuário MHA </a> </li>
 					</ul>
@@ -33,13 +36,13 @@
 				
 				<li> Gerar Relatório de Estoque </li>
 					<ul>
-						<li> <a href="#15"> Gerar Estoque MHA (ruptura) </a> </li>
-						<li> <a href="#16"> Gerar Estoque MHA (completo) </a> </li>
+						<li> <a href="#15"> Gerar Ruptura de Estoque (Portal) </a> </li>
+						<li> <a href="#16"> Gerar Estoque MHA Completp (MHA) </a> </li>
 					</ul>
 		</ol>
-    </p>
+    
 
-	<h2 id="1">Abrir chamado na Inovapar (Problema Portal) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="1"><span class="label label-warning">Abrir chamado na Inovapar (Problema Portal)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Acessar o site da <a href="http://suporte.inovapar.com.br/index.php" target="_blank">Inovapar</a>
 			<br>Clicar em "Open New Ticket"
@@ -50,13 +53,13 @@
 			<br><strong>Issue Summary:</strong> Resumo do problema 
 			<br><strong>Issue Details:</strong> Escrever os detalhes do problema 
 			<br><strong>Attachments::</strong> Caso haja algum <i>printscreen</i> das telas e/ou do erro clicar em 
-				<strong>Escolher Arquivo</strong> para colocar a imagem salva em seu computador.</br>
+				<strong>Escolher Arquivo</strong> para colocar a imagem salva em seu computador.<br>
 			
 			<br> Assim que todas as informações estiverem preenchidas, clique em <strong> Create New Ticket </strong></br>
 			<br>
 		</p>
 		
-	<h2 id="2">Criar usuário Portal <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a> </h2>
+	<h2 id="2"><span class="label label-warning">Criar usuário Portal</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a> </h2>
 		<p>
 			<br>Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a> > Clique em Administração > Usuários e Permissões > 
 			Usuário > Procure pelo usuário modelo ao usuário à ser criado > Selecione-o> 
@@ -68,16 +71,16 @@
 			<br></br>
 		</p>
 	
-	<h2 id="3">Criar usuário SGA <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="3"><span class="label label-warning">Criar usuário SGA</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Vá no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Administração > Usuário > Clique em Novo usuário
 			> Preencha as informações. 
 			<br></br>
 		</p>
-	<h2 id="4">Criar usuário MHA <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="4"><span class="label label-warning">Criar usuário MHA </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Vá no <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> >  Administração do Sistema > Controle de Acesso 
-			> Usuário > Pesquise pelo usuário modelo > Verifique as permissões do mesmo > Clique em Novo</br>
+			> Usuário > Pesquise pelo usuário modelo > Verifique as permissões do mesmo > Clique em Novo
 			<br><strong>Código:</strong> DRT do novo usuário 
 			<br><strong>Descrição:</strong> Nome do usuário
 			<br><strong>Senha:</strong> 123456
@@ -89,29 +92,29 @@
 			<br><strong>Permitir S. Simultâneas:</strong> Não
 			<br><strong>Tempo:</strong> 0
 			<br><strong>Tipo do acesso:</strong> Caso o acesso seja para apenas coletor, apenas computador ou ambos
-			<br><strong>Tipo de Autenticação:</strong> Deixar da mesma forma que o usuário modelo </br>
+			<br><strong>Tipo de Autenticação:</strong> Deixar da mesma forma que o usuário modelo 
 			
-			<br>Ao finalizar o cadastro clique em <strong>Salvar Alterações.</strong></br>
+			<br>Ao finalizar o cadastro clique em <strong>Salvar Alterações.</strong>
 			
 			<br>Em seguida vá em Administração do Sistema > Controle de Acesso > Usuários por Planta 
-			> Selecione a planta 326 e clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.</br>
+			> Selecione a planta 326 e clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.
 
 			<br>Se o usuário for possuir acesso Web >  Administração do Sistema > Controle de Acesso 
 			> Permissões de Usuário > Selecione o grupo Administradores 
-			> Clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.</br>
+			> Clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.
 
 			<br>Caso o acesso seja apenas coletor > Administração de Sistema > Controle de Acesso – PDA 
 			> Usuário Permissão Grupo > Clique em ADM > Selecione o usuário da caixa da direita e o envie para a caixa central > Salvar.
-			<br></br>
+			<br>
 		</p>
 	
-	<h2 id="5">Finalizar Empenho <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="5"><span class="label label-warning">Finalizar Empenho </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a> > Operação > Empenho > Procurar Empenho 
 			> Editar > Finalizar > OK.
 		</p>
 	
-	<h2 id="6">Cadastrar Itens no Portal <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="6"><span class="label label-warning">Cadastrar Itens no Portal </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Assim que solicitado pela qualidade, abra a planilha (T:\Cadastro\RG.GQ.13.001- CADASTRO DE MATERIAL) 
 			> Copie o CDITEM > Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a>  > Cadastro > Artigos 
@@ -127,7 +130,7 @@
 			<br></br>
 		</p>
 	
-	<p><h2 id="7">Cadastrar SIAFISICO <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2></p>
+	<p><h2 id="7"><span class="label label-warning">Cadastrar SIAFISICO </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2></p>
 		<p>
 			<br>Assim que solicitado pela qualidade, 
 			procurar o código do SIAFISICO no site do <a href="http://www.bec.sp.gov.br/BEC_Catalogo_UI/CatalogoPesquisa3.aspx?chave=" target="_blank"> BEC</a>
@@ -140,22 +143,22 @@
 			<br></br>
 		</p>
 	
-	<h2 id="8">Ativar ou Inativar Artigos <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="8"><span class="label label-warning">Ativar ou Inativar Artigos </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Abra a planilha que terá o item para ser ativado/inativado (T:\Cadastro\RG.GQ.13.001- CADASTRO DE MATERIAL) 
 			> Copie o CDITEM > Vá no <a href="http://172.22.0.33/" target="_blank">Portal</a> > Cadastro > Artigos 
 			> Selecione o Item > Clique em Ativar / Inativar. 
-			Caso o mesmo possua abastecimento pendente, realizar o procedimento de  <a href="#9"> Abastecer pedidos </a></br>
-			<br>Caso haja empenhos que impeçam que inative-o entre em contato com a Qualidade para resolução do mesmo.</br>
+			Caso o mesmo possua abastecimento pendente, realizar o procedimento de  <a href="#9"> Abastecer pedidos </a>
+			<br>Caso haja empenhos que impeçam que inative-o entre em contato com a Qualidade para resolução do mesmo.
 			<br>Ao final da ativação/inativação mandar um 
 			<a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br; cadastros@ceadis.org.br"> e-mail</a> para 
 			<a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br"> Tecnologia</a>, 
 			<a href="mailto:cadastros@ceadis.org.br"> Cadastros</a>,
 			<a href="mailto:qualidade@ceadis.org.br"> Qualidade</a> com as informações para que possa ser dada continuidade ao processo.
-			<br></br>
+			<br>
 		</p>
 	
-	<h2 id="9">Abastecer pedidos <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="9"><span class="label label-warning">Abastecer pedidos </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Ao inativar um item e o mesmo consta com pendência no abastecimento do mesmo, 
 			verifique o pedido e se ele for de uma data anterior a 3 dias, 
@@ -165,7 +168,7 @@
 			<br></br>
 		</p>
 	
-	<h2 id="10">Reimportar Ordem com quantidade divergente <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="10"><span class="label label-warning">Reimportar Ordem com quantidade divergente </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Operação > Empenho > Selecione o hospital referente a ordem 
 			> Operação > Empenho > Digite o número da OC / empenho > Selecione e clique em Consultar 
@@ -183,7 +186,7 @@
 			<br>
 		</p>
 		
-	<h2 id="11">Excluir ou cancelar pedido <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="11"><span class="label label-warning">Excluir ou cancelar pedido </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Operação > Pedido > Selecione o hospital correspondente 
 			> procure o número do pedido > selecione o mesmo e clique em excluir > Selecione o motivo para a exclusão 
@@ -192,13 +195,13 @@
 			<br></br>
 		</p>
 		
-	<h2 id="12">Checklist de Sistemas <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="12"><span class="label label-warning">Checklist de Sistemas </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>No <a href="http://172.22.0.33/" target="_blank">Portal</a>
 			<br></br>
 		</p>
 		
-	<h2 id="13">Checklist Ruptura <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="13"><span class="label label-warning">Checklist Ruptura </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>Acesse a unidade de rede Z:
 			<br>Verificar em todos os hospitais nas pastas (*Hospital*\_EstoqueWeb\Relatório\Ruptura de Estoque\Mês correspondente\)
@@ -209,53 +212,53 @@
 			<br></br>
 		</p>
 		
-	<h2 id="14">Checklist TRAM (DataSul11) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="14"><span class="label label-warning">Checklist TRAM (DataSul11)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
-			<br>Acesse o DataSul11 (T:\Publico\DATASUL\TOTVS11\DataSul 11.rdp):</br>
+			<br>Acesse o DataSul11 (T:\Publico\DATASUL\TOTVS11\DataSul 11.rdp):
 			
 			<br>Login: matriz-2000\opr.dtsul.ceadis11 
-			<br>Senha: seconci</br>
+			<br>Senha: seconci
 			
-			<br>Clique em Lembrar minhas credenciais, em seguida marque a opção não perguntar novamente e clique em Conectar.</br>
+			<br>Clique em Lembrar minhas credenciais, em seguida marque a opção não perguntar novamente e clique em Conectar.
 
 			<br>Usuário: 26000084
-			<br>Senha: 123</br>
+			<br>Senha: 123
 
-			<br>Ferramentas > Executar Programa > \\secdts11apl\ERP\Especificos\ems206\esp\esft0009.r > OK</br>
+			<br>Ferramentas > Executar Programa > \\secdts11apl\ERP\Especificos\ems206\esp\esft0009.r > OK
 
 			Estabelecimento = 326
 			Serie: 1
 			Nota Fiscal: 
 			Emissão: Data dia ANTERIOR
 			
-			<br>Emitente:</br>
+			<br>Emitente:
 			
 			<br>SP – 1271
 			<br>AM – 1048
 			<br>IS – 9
 			<br>CO – 16
-			<br>VA – 4</br>
+			<br>VA – 4
 			
-			<br>\\172.16.0.56\Especificos\ems206\integracao\prod\arquivos - Saída dos arquivos</br>
+			\\172.16.0.56\Especificos\ems206\integracao\prod\arquivos - Saída dos arquivos<br>
 			
 			<br>Volta ao FTP, clica na unidade de rede referente (X:), em todos os hospitais acessa a unidade de 
-			rede mapeada onde os arquivos serão exportados e os importe na pasta do servidor FTP do hospital correspondente.</br>
+			rede mapeada onde os arquivos serão exportados e os importe na pasta do servidor FTP do hospital correspondente.
 
 			<br>Retorne ao <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Checklist > Sistemas - TRAM > Preencha de acordo com os testes.</br>
-			<br></br>
+			<br>
 		</p>
 		
-	<h2 id="15">Gerar Estoque (Ruptura) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="15"><span class="label label-warning">Gerar Estoque (Ruptura) </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>No <a href="http://172.22.0.33/" target="_blank">Portal</a> > Selecione o hospital cujo qual deseja gerar o relatório 
 			> Relatórios > Estoque > Ruptura de Estoque 
 			> Coloque a data referente ao relatório que deseja criar 
 			> Excel > Salva na pasta referente ao hospital. 
-			<br>Verificar o relatório de ruptura Z:\X_EstoqueWeb\Relatório\Ruptura de Estoque\Mês atual\último dia de Operação).</br>
+			<br>Verificar o relatório de ruptura Z:\X_EstoqueWeb\Relatório\Ruptura de Estoque\Mês atual\último dia de Operação).
 			<br></br>
 		</p>
 	
-	<h2 id="16">Gerar Estoque MHA (Completo) <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+	<h2 id="16"><span class="label label-warning">Gerar Estoque MHA (Completo) </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
 		<p>
 			<br>No <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> > Relatórios > Estoque > Estoque básico
 			> Clicar em Visualizar > selecionar o disquete localizado no canto superior esquerdo
@@ -263,6 +266,21 @@
 			> Salvar como > Selecione a pasta de destino> Salvar com o nome padrão.</br>
 			<br></br>
 		</p>
-			
+		
+		<div class="container col-md-12">
+			<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">              
+         	<div class="col-md-12">
+             
+                <footer>
+                    <br>
+                    <p><strong>&copy; ..:: CEADIS - TECNOLOGIA DA INFORMAÇÃO ::..</strong></p>
+                </footer>                                     
+          	</div>
+			</nav>			
+		</div>
+		
+		
+		</div>	
+		
   </body>
 </html>
