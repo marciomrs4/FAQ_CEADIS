@@ -37,6 +37,7 @@ img {
 }
 figure {
 	size: 5 px;
+	float: right;
 }
 
 figcaption {
