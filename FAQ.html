@@ -1,390 +1,448 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="utf-8">
     <title>FAQ - Ceadis</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
   </head>
-  <body>
+	<body>
   
-  <div class="container">
-	<h1 id="topo"><span class="label label-primary">FAQ - CEADIS </span></h1><br>
-	
-		<ol>
-				<li> <a href="#abrir_chamado_inovapar"> Abrir chamado na Inovapar (Problema Portal) </a> </li>
-				<li> Criação de Usuário</li>
-					<ul>
-						<li><a href="#criar_usuario_portal">Criar usuário Portal</a> </li>
-						<li> <a href="#criar_usuario_sga"> Criar usuário SGA </a> </li>
-						<li> <a href="#criar_usuario_mha"> Criar usuário MHA </a> </li>
-					</ul>
-				<li> <a href="#finalizar_empenho"> Finalizar Empenho </a> </li>
-				<li> <a href="#cadastrar_itens_portal"> Cadastrar itens no Portal </a> </li>
-				<li> <a href="#cadastrar_siafisico"> Cadastrar SIAFISICO </a> </li>
-				<li> <a href="#ativar_inativar_artigo"> Ativar ou Inativar Artigo </a> </li>
-				<li> <a href="#abastecer_pedido"> Abastecer pedido </a> </li>
-				<li> <a href="#reimportar_ordem"> Reimportar ordem com quantidade divergente </a> </li>
-				<li> <a href="#excluir_cancelar_pedido"> Excluir ou cancelar pedido </a> </li>
-				<li> Realizar Checklist </li>
-					<ul>
-						<li> <a href="#check_infra_manha"> Checklist de Infra - Manhã </a> </li>
-						<li> <a href="#check_infra_tarde"> Checklist de Infra - Tarde </a> </li>
-						<li> <a href="#check_sistemas"> Checklist de Sistemas </a> </li>
-						<li> <a href="#check_ruptura"> Checklist de Ruptura </a> </li>
-						<li> <a href="#check_tram"> Checklist TRAM (DataSul11)</a> </li>
-					</ul>				
-				<li> Gerar Relatório de Estoque </li>
-					<ul>
-						<li> <a href="#gerar_ruptura_estoque"> Gerar Ruptura de Estoque (Portal) </a> </li>
-						<li> <a href="#gerar_estoque_mha"> Gerar Estoque MHA Completo (MHA) </a> </li>
-					</ul>
-		</ol>
-    
-	<h2 id="abrir_chamado_inovapar"><span class="label label-warning">Abrir chamado na Inovapar (Problema Portal)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Acessar o site da <a href="http://suporte.inovapar.com.br/index.php" target="_blank">Inovapar</a> e clicar em "Open New Ticket".
-			<br> Preencher as informações conforme a solicitação: <br>
-			<br><b>Help Topic:</b> Suporte 
-			<br><b>Email Adress:</b> Sistemas@ceadis.org.br 
-			<br><b>Full Name:</b> Seu nome 
-			<br><b>Phone Number:</b> 36465626 <b>Ext:</b> 5627 
-			<br><b>Issue Summary:</b> Resumo do problema 
-			<br><b>Issue Details:</b> Escrever os detalhes do problema 
-			<br><b>Attachments::</b> Caso haja algum <i>printscreen</i> das telas e/ou do erro, clicar em 
-				<b>Escolher Arquivo</b> para colocar a imagem salva em seu computador.<br>
-			<br> Assim que todas as informações estiverem preenchidas, clique em <b> Create New Ticket </b></br>
-			<br>
-		</p>
-		
-	<h2 id="criar_usuario_portal"><span class="label label-warning">Criar usuário Portal</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a> </h2>
-		<p>
-			<br>Acesse o <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Clique em Administração > Usuários e Permissões > 
-			Usuário > Procure pelo usuário modelo ao usuário à ser criado > Selecione-o> 
-			Clique em Criar > Substitua as informações do usuário modelo pelas informações do novo usuário (Senha: 123456) > Clique em Salvar 
-			> Logue com o usuário criado para verificação > Retorne ao seu usuário > Cadastro > Clientes > Pesquisar 
-			> Clique para que a visualização seja completa (16 no total) > Selecione o hospital que será dada a permissão ao usuário 
-			> Editar > No campo usuário procure pelo usuário criado > Selecione o usuário e clique em Salvar 
-			> Faça isso com todos os hospitais que o usuário tiver acesso.
-			<br></br>
-		</p>
-		
-	<h2 id="criar_usuario_sga"><span class="label label-warning">Criar usuário SGA</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Acesse o <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Administração > Usuário > Clique em Novo usuário
-			> Preencha as informações > Clique em <b>Cadastrar</b>.
-			<br></br>
-		</p>
-		
-	<h2 id="criar_usuario_mha"><span class="label label-warning">Criar usuário MHA </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Acesse o <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> >  Administração do Sistema > Controle de Acesso 
-			> Usuário > Pesquise pelo usuário modelo > Verifique as permissões do mesmo > Clique em Novo
-			<br><b>Código:</b> DRT do novo usuário 
-			<br><b>Descrição:</b> Nome do usuário
-			<br><b>Senha:</b> 123456
-			<br><b>Status:</b> ATV
-			<br><b>Expirar senha:</b> Não
-			<br><b>Expirar (Dias):</b> 0 
-			<br><b>Senha Forte:</b> Não 
-			<br><b>Tamanho da senha:</b> 0
-			<br><b>Permitir S. Simultâneas:</b> Não
-			<br><b>Tempo:</b> 0
-			<br><b>Tipo do acesso:</b> Caso o acesso seja para apenas coletor, apenas computador ou ambos
-			<br><b>Tipo de Autenticação:</b> Deixar da mesma forma que o usuário modelo 
-			<br>Ao finalizar o cadastro clique em <b>Salvar Alterações.</b><br>
+		<div class="container">
+			<h1 id="topo"><span class="label label-primary">FAQ - CEADIS </span></h1><br>
 			
-			<br>Em seguida acesse Administração do Sistema > Controle de Acesso > Usuários por Planta 
-			> Selecione a planta 326 e clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.<br>
+				<ol>
+						<li> <a href="#abrir_chamado_inovapar"> Abrir chamado na Inovapar (Problema Portal) </a> </li>
+						<li> CriaÃ§Ã£o de UsuÃ¡rio</li>
+							<ul>
+								<li><a href="#criar_usuario_portal">Criar usuÃ¡rio Portal</a> </li>
+								<li> <a href="#criar_usuario_sga"> Criar usuÃ¡rio SGA </a> </li>
+								<li> <a href="#criar_usuario_mha"> Criar usuÃ¡rio MHA </a> </li>
+							</ul>
+						<li> <a href="#finalizar_empenho"> Finalizar Empenho </a> </li>
+						<li> <a href="#cadastrar_itens_portal"> Cadastrar itens no Portal </a> </li>
+						<li> <a href="#cadastrar_siafisico"> Cadastrar SIAFISICO </a> </li>
 
-			<br>Se o usuário for possuir acesso Web >  Administração do Sistema > Controle de Acesso 
-			> Permissões de Usuário > Selecione o grupo Administradores 
-			> Clique em Permissões > Selecione o usuário da caixa da direita e o envie para a caixa central.<br>
+						<li> <a href="#ativar_inativar_artigo"> Ativar ou Inativar Artigo </a> </li>
+						<li> <a href="#abastecer_pedido"> Abastecer pedido </a> </li>
+						<li> <a href="#reimportar_ordem"> Reimportar ordem com quantidade divergente </a> </li>
+						<li> <a href="#excluir_cancelar_pedido"> Excluir ou cancelar pedido </a> </li>
+						<li> Realizar Checklist </li>
+							<ul>
+								<li> <a href="#check_infra_manha"> Checklist de Infra - ManhÃ£ </a> </li>
+								<li> <a href="#check_infra_tarde"> Checklist de Infra - Tarde </a> </li>
+								<li> <a href="#check_sistemas"> Checklist de Sistemas </a> </li>
+								<li> <a href="#check_ruptura"> Checklist de Ruptura </a> </li>
+								<li> <a href="#check_tram"> Checklist TRAM (DataSul11)</a> </li>
+							</ul>				
+						<li> Gerar RelatÃ³rio de Estoque </li>
+							<ul>
+								<li> <a href="#gerar_ruptura_estoque"> Gerar Ruptura de Estoque (Portal) </a> </li>
+								<li> <a href="#gerar_estoque_mha"> Gerar Estoque MHA Completo (MHA) </a> </li>
+							</ul>
+						<li> <a href="#cancelar_nota_datasul"> Cancelar Nota Fiscal no DataSul </a> </li>
+						<li> <a href="#restartar_portal_produÃ§Ã£o"> Restartar Portal PorduÃ§Ã£o </a> </li>
+				</ol>
 
-			<br>Caso o acesso seja apenas coletor > Administração de Sistema > Controle de Acesso – PDA 
-			> Usuário Permissão Grupo > Clique em ADM > Selecione o usuário da caixa da direita e o envie para a caixa central > Salvar.<br>
-		</p>
-	
-	<h2 id="finalizar_empenho"><span class="label label-warning">Finalizar Empenho </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Assim que solicitado, acesse o <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> 
-				> Operação > Empenho > Procurar Empenho > Editar > Finalizar > OK.
-		</p>
-	
-	<h2 id="cadastrar_itens_portal"><span class="label label-warning">Cadastrar Itens no Portal </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Assim que solicitado pela qualidade, abra a planilha (T:\Cadastro\RG.GQ.13.001- CADASTRO DE MATERIAL) 
-			> Copie o CDITEM > Acesse o <a href="http://172.22.0.33/" target="_blank">Portal</a>  > Cadastro > Artigos 
-			> Procure o Item para verificar se já existe o mesmo 
-			> Caso não haja clique em Criar > <b>Referência:</b> CDITEM > <b>Descrição:</b> Copie da planilha a descrição do item 
-			> Abreviação > Cole a descrição > <b>Unidade de medida:</b> verifique a unidade de medida da planilha 
-			> <b>SIAFISICO:</b> Copie da planilha > Clique em Criar. Caso o SIAFISICO não esteja cadastrado, tera de ser feito o
-			<a href="#cadastrar_siafisico"> Cadastro do SIAFISICO </a>
-			<br>Envie um <a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br; cadastros@ceadis.org.br"> e-mail</a> para 
-			<a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br"> Tecnologia</a>, 
-			<a href="mailto:cadastros@ceadis.org.br"> Cadastros</a>,
-			<a href="mailto:qualidade@ceadis.org.br"> Qualidade</a> com as informações necessárias e requisitando o cadastro do item.
-			<br></br>
-		</p>
-	
-	<p><h2 id="cadastrar_siafisico"><span class="label label-warning">Cadastrar SIAFISICO </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2></p>
-		<p>
-			<br>Assim que solicitado pela qualidade, ou quando houver a necessidade de cadastrar SIAFISICO, entrar no site do 
-			<a href="http://www.bec.sp.gov.br/BEC_Catalogo_UI/CatalogoPesquisa3.aspx" target="_blank"> BEC</a>
-			e procurar pelo SIAFISICO no campo <b>Código do Item</b>.
-			Retorne ao <a href="http://172.22.0.33/" target="_blank">Portal</a> > Cadastro > Siafisico – Materiais > Clique no botão Criar 
-			> No campo código copie o código cujo qual foi solicitado o cadastro. 
-			No campo nome, copie o nome do endereço acima, e no campo descrição copie a descrição completa. 
-			> Clique em Salvar.
-			Entre no produto e cadastre o SIAFISICO no produto para que seja vinculado ao mesmo.
-			<br></br>
-		</p>
-	
-	<h2 id="ativar_inativar_artigo"><span class="label label-warning">Ativar ou Inativar Artigo </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Abra a planilha que terá o item para ser ativado/inativado (T:\Cadastro\RG.GQ.13.001- CADASTRO DE MATERIAL) 
-			> Copie o CDITEM > Acesse o <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Cadastro > Artigos 
-			> Selecione o Item > Clique em Ativar / Inativar. 
-			Caso o mesmo possua abastecimento pendente, realizar o procedimento de  <a href="#abastecer_pedido"> Abastecer pedidos </a>
-			<br>Caso haja empenhos que impeçam que inative-o entre em contato com a Qualidade para resolução do mesmo.
-			<br>Ao final da ativação/inativação mandar um 
-			<a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br; cadastros@ceadis.org.br"> e-mail</a> para 
-			<a href="mailto:tecnologia@ceadis.org.br"> Tecnologia</a>, 
-			<a href="mailto:cadastros@ceadis.org.br"> Cadastros</a>,
-			<a href="mailto:qualidade@ceadis.org.br"> Qualidade</a> com as informações para que possa ser dada continuidade ao processo.
-			<br>
-		</p>
-	
-	<h2 id="abastecer_pedido"><span class="label label-warning">Abastecer pedido </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Ao inativar um item e o mesmo consta com pendência no abastecimento do mesmo, 
-			verifique o pedido e se ele for de uma data anterior a 3 dias, 
-			faça uma análise para verificar a possibilidade de abastecê-lo. Caso sim, acesse o 
-			<a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Operação > Abastecer Pedidos 
-			> Procure pelo pedido e clique em Marcar como Abastecido. Agora você poderá inativar o item.
-			<br>
-		</p>
-	
-	<h2 id="reimportar_ordem"><span class="label label-warning">Reimportar Ordem com quantidade divergente </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>No <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Operação > Empenho > Selecione o hospital referente a ordem 
-			> Operação > Empenho > Digite o número da OC / empenho > Selecione e clique em Consultar 
-			> Verifique as quantidades e as informações e confira junto ao documento pdf enviado anexado ao chamado 
-			> caso haja divergência verifique o empenho gerado pelo hospital no FileZila > Selecione o hospital 
-			> Entre na pasta referente aos arquivos de OC > Faça uma cópia local dos arquivos efetuados na data 
-			> procure pela OC que está divergente > Verifique se a mesma está correta 
-			>  Caso esteja envie-a para WinSCP para que suba novamente no servidor de forma correta 
-			
-			<h3> P.S.: Verifique se a OC não consta agendamento > Caso a OC demore para ir ao portal verifique a tela de problemas 
-			(Operação > Problemas > Cole a OC no campo palavra-chave e veja o problema ocorrido).
-			<br>P.S.: Caso algum item esteja inativo, 
-			informe o usuário para que o mesmo entre em contato com a qualidade para que possa <a href="#ativar_inativar_artigo"> ativar </a>novamente o item. 
-			Assim que efetuar o procedimento, verifique se a divergência foi resolvida no portal reimportando o mesmo. </h3>
-			<br>
-		</p>
-		
-	<h2 id="excluir_cancelar_pedido"><span class="label label-warning">Excluir ou cancelar pedido </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>No <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Operação > Pedido > Selecione o hospital correspondente 
-			> procure o número do pedido > selecione o mesmo e clique em excluir > Selecione o motivo para a exclusão 
-			> Caso haja uma mensagem de erro > Retorne > Selecione o pedido > Editar > Altere a situação do pedido para “Cancelado” 
-			> Salve, o pedido será alterado para cancelado.
-			<br>
-		</p>
-		
-	<h2 id="check_infra_manha"><span class="label label-warning">Checklist Infra - Manhã </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Entrar no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> e ir na área de Checklist,
-			selecionar o <b>Checklist SISTEMAS – Checklist Manhã</b>, e verificar os seguintes pontos:<br>
-			<br><b>IMPRESSORA - IMP-ADM-01:</b> Acessar a <a href="http://172.22.2.1/general/status.html" target="_blank">Impressora ADM-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-RH-02:</b> Acessar a <a href="http://172.22.2.2/main/main.html" target="_blank">Impressora RH-02.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-REC-02:</b> Acessar a <a href="http://172.22.2.3/general/status.html" target="_blank">Impressora REC-02.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-EXP-01:</b> Acessar a <a href="http://172.22.2.4/general/status.html" target="_blank">Impressora EXP-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-GAL-01:</b> Acessar a <a href="http://172.22.2.5/general/status.html" target="_blank">Impressora GAL-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-GAL-02:</b> Acessar a <a href="http://172.22.2.6/general/status.html" target="_blank">Impressora GAL-02.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>WCS:</b> Acessar o <a href="http://172.22.2.6/general/status.html" target="_blank">WCS</a>
-				e utilizar o usuário ceadis e a senha 10112023 para acessar e verificar se o sistema está OK.
-			<br><b>Envio de e-mail para e-mail externo:</b> Todos os acessos externos estão bloqueados, portanto coloque ERRO.
-			<br><b>Recebimento de e-mail externo:</b> Todos os acessos externos estão bloqueados, portanto coloque ERRO.
-			<br><b>Mensagem de recebimento de email RH:</b> Todos os acessos externos estão bloqueados, portanto coloque ERRO.
-			<br><b>Verificar Tarifador esta coletando informação da data atual:</b> 
-				Abra o mstsc e acesse o 192.168.31.64 com o <b>usuário:</b> usuario_tarifador e a <b>senha:</b> tarif@dor.
-				Verificar se os horários e a conexão estão OK.
-			<br><b>Checar Black List:</b> Acessar o 
-				<a href="http://mxtoolbox.com/SuperTool.aspx?action=blacklist%3aceadis.org.br&run=toolpage " target="_blank">Monitor</a>
-				e verificar se os e-mails corporativos entraram na blacklist.	
-			<br><b>Checar Radio Nextel "ATENÇÃO":</b> verificar se o rádio Nextel está com bateria e checar sinal de rede do mesmo.
-			<br><b>Checar ar condicionado fisicamente "ATENÇÃO":</b> verificar se os ar condicionados da sala do servidor 
-				estão funcionando corretamente.
-			<br><b>DVRs:</b> acessar com o ip 172.22.4.119, entrar no SIM (<b>login:</b> Admin <b>senha:</b> Admin) 
-				e verificar se todos os DVRs estão OK.
-			<br><b>Verificar Horário de DVR´s :</b> verificar se o horário dos DVR's estão similares ao horário da máquina, caso não, 
-				sincronizar o mesmo.
+				<ul>
+					<li> 
+						<a href="#lista_de_links"> Lista de Links </a>
+					</li>
+				</ul>
+
+			<h2 id="abrir_chamado_inovapar"><span class="label label-warning">Abrir chamado na Inovapar (Problema Portal)</span> <a href="#topo"> 
+			  <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Acessar o site da <a href="http://suporte.inovapar.com.br/index.php" target="_blank">Inovapar</a> e clicar em "Open New Ticket".
+					<br> Preencher as informaÃ§Ãµes conforme a solicitaÃ§Ã£o: <br>
+					<br><b>Help Topic:</b> Suporte 
+					<br><b>Email Adress:</b> Sistemas@ceadis.org.br 
+					<br><b>Full Name:</b> Seu nome 
+					<br><b>Phone Number:</b> 36465626 <b>Ext:</b> 5627 
+					<br><b>Issue Summary:</b> Resumo do problema 
+					<br><b>Issue Details:</b> Escrever os detalhes do problema 
+					<br><b>Attachments::</b> Caso haja algum <i>printscreen</i> das telas e/ou do erro, clicar em 
+						<b>Escolher Arquivo</b> para colocar a imagem salva em seu computador.<br>
+					<br> Assim que todas as informaÃ§Ãµes estiverem preenchidas, clique em <b> Create New Ticket </b></br>
+					<br>
+				</p>
 				
-			<br><b>Verificar Horário de Relógios de ponto:</b> verificar se o relógio de ponto está com o horário correto.
-			<br><b>Verificar Horário de Catracas:</b> verificar se o horário das catracas está correto.
-			<br><b>Verificar bobina do relógio de ponto da Operação:</b> abrir relógio de ponto da Operação, 
-				e verificar se a bobina é sufiente para o funcionamento diário.
-			<br><b>Verificar bobina do relógio de ponto do Administrativo:</b> abrir relógio de ponto do Administrativo, 
-				e verificar se a bobina é sufiente para o funcionamento diário.
-		</p>
-		
-	<h2 id="check_infra_tarde"><span class="label label-warning">Checklist Infra - Tarde </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Entrar no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> e ir na área de Checklist,
-			selecionar o <b>Checklist SISTEMAS – Checklist Manhã</b>, e verificar os seguintes pontos:<br>
-			
-			<br><b>E-mail para e-mail externo:</b> Todos os acessos externos estão bloqueados, portanto coloque ERRO.
-			<br><b>WCS - Cacti:</b> Acessar o <a href="http://172.22.2.6/general/status.html" target="_blank">WCS</a>
-				e utilizar o usuário ceadis e a senha 10112023 para acessar e verificar se o sistema está OK.
-			<br><b>Enviar e-mail para NTUX - FITAS BACKUP:</b>
-			<br><b>Verificar Ar Condicionado da sala de Servidores:</b> verificar se os ar condicionados da sala do servidor 
-				estão funcionando corretamente.
-			<br><b>Verificar planilha de Itens para cadastro:</b> Abrir a planilha de cadastro e verificar se a mesma está OK.
-			<br><b>IMPRESSORA - IMP-ADM-01:</b> Acessar a <a href="http://172.22.2.1/general/status.html" target="_blank">Impressora ADM-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-RH-01:</b> Acessar a <a href="http://172.22.2.2/main/main.html" target="_blank">Impressora RH-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-REC-02:</b> Acessar a <a href="http://172.22.2.3/general/status.html" target="_blank">Impressora REC-02.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-EXP-01:</b> Acessar a <a href="http://172.22.2.4/general/status.html" target="_blank">Impressora EXP-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-GAL-01:</b> Acessar a <a href="http://172.22.2.5/general/status.html" target="_blank">Impressora GAL-01.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>IMPRESSORA - IMP-GAL-02:</b> Acessar a <a href="http://172.22.2.6/general/status.html" target="_blank">Impressora GAL-02.</a>
-				E checar se a mesma encontra-se funcionando corretamente.
-			<br><b>E-mail RH:</b> Todos os acessos externos estão bloqueados, portanto coloque ERRO.
-			<br><b>Tarifador:</b> Abra o mstsc e acesse o 192.168.31.64 com o <b>usuário:</b> usuario_tarifador e a <b>senha:</b> tarif@dor.
-				Verificar se os horários e a conexão estão OK.
-			<br><b>Checar Black List:</b> Acessar o 
-				<a href="http://mxtoolbox.com/SuperTool.aspx?action=blacklist%3aceadis.org.br&run=toolpage " target="_blank">Monitor</a>
-				e verificar se os e-mails corporativos entraram na blacklist.
-			<br><b>Gerar relatório de estoque MHA:</b> Verificar se a operação já finalizou a separação 
-				(<a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> > Processos > Separação > Fila de Separação 
-				(Verificar se há alguma separação em andamento ou pendente)), Caso ainda não tenha sido finalizado até o final do expediente,
-				gerar no próximo dia, caso não <a href="#gerar_estoque_mha"> Gerar Estoque MHA Completo (MHA)</a>.
-			<br><b>DVRs:</b> acessar com o ip 172.22.4.119, entrar no SIM (<b>login:</b> Admin <b>senha:</b> Admin) 
-				e verificar se todos os DVRs estão OK.
-			<br><b>Verificar bateria e estado do Tablet Samsung:</b> Checar se a bateria do Tablet Samsung (Sala do Servidor) está OK.
-			<br><b>Verificar se Datacenter esta fechado:</b> Após checar todos os pontos na sala do servidor, 
-				verificar se a mesma encontra-se devidamente fechada.
-			<br><b>Verificar Horário de DVR´s :</b> verificar se o horário dos DVR's estão similares ao horário da máquina, caso não, 
-				sincronizar o mesmo.
-			<br><b>Verificar Horário de Relógios de ponto:</b> verificar se o relógio de ponto está com o horário correto.
-			<br><b>Verificar Horário de Catracas:</b> Verificar se o horário das catracas está correto.
-			<br><b>Bloquear usuário suporte.mha:</b> Acessar AD e bloquear usuário.
-			
-		</p>
-		
-		
-	<h2 id="check_sistemas"><span class="label label-warning">Checklist de Sistemas </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>
-			Entrar no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> e ir na área de Checklist,
-			selecionar o <b>Checklist SISTEMAS – Checklist Manhã</b>, e verificar os seguintes pontos:<br>
-			<br><b>Portal – Estoque Web:</b> verificar se o mesmo encontra-se em funcionamento fazendo login.
-			<br><b>Sistema – SCE:</b> verificar se o mesmo encontra-se em funcionamento fazendo login.
-			<br><b>Sistema – MHA:</b> verificar se o mesmo encontra-se em funcionamento fazendo login.
-			<br><b>Telnet – MHA:</b> abrir cmd e digitar telnet 172.22.0.43, acesse com o seu <b>Usuário:</b> DRT,
-				<b>Senha:</b> Senha cadastrada anteriormente, <b>Companhia:</b> 1, <b>Planta:</b> 326, 
-				<b>Depósito:</b> 1. Verifique se está funcionando normalmente.
-			<br><b>Planilha de Cadastro de Artigo:</b> abrir a planilha de cadastro e verificar se a mesma está OK.
-			<br><b>E-mail aniversariante:</b> verificar se há pessoas que fazem aniversário na data,
-				e verificar se foi enviado o e-mail com o aniversariante. Caso não, marque como ERRO.
-			<h3>P.S.: Somente será enviado e-mail, caso o aniversariante seja da sua unidade.</h3>
-			<b>Verificar planilha de estoque MHA:</b> Acessar a pasta T:\Estoque\MHA 
-			e verificar se no dia anterior ou último dia em que teve movimentação de separação e expedição se a planilha consta na pasta.<br>
-			<br>Ao término das verificações, poderá ser inserido algumas observações caso haja, caso não apenas coloque algumas considerações.
-		</p>
-		
-	<h2 id="check_ruptura"><span class="label label-warning">Checklist Ruptura </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Acesse a unidade de rede Z:
-			<br>Verificar em todos os hospitais nas pastas (*Hospital*\_EstoqueWeb\Relatório\Ruptura de Estoque\Mês correspondente\)
-			<br>E verifique se a planilha está com tamanho similar as demais, caso não esteja tente 
-			<a href="#gerar_ruptura_estoque"> gerar </a> um novo relatório no 
-			<a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a>, pois no dia anterior ainda não havia sido finalizado a operação.
-			<br>Caso esteja OK, preencher o checkslit de acordo no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a>
-			<br>
-		</p>
-		
-	<h2 id="check_tram"><span class="label label-warning">Checklist TRAM (DataSul11)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>Acesse o DataSul11 (T:\Publico\DATASUL\TOTVS11\DataSul 11.rdp):
-			
-			<br>Login: matriz-2000\opr.dtsul.ceadis11 
-			<br>Senha: seconci
-			
-			<br>Clique em Lembrar minhas credenciais, em seguida marque a opção não perguntar novamente e clique em Conectar.
+			<h2 id="criar_usuario_portal"><span class="label label-warning">Criar usuÃ¡rio Portal</span> <a href="#topo"> 
+			  <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a> </h2>
+				<p>
+					<br>Acesse o <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Clique em AdministraÃ§Ã£o > UsuÃ¡rios e PermissÃµes > 
+					UsuÃ¡rio > Procure pelo usuÃ¡rio modelo ao usuÃ¡rio Ã  ser criado > Selecione-o> 
+					Clique em Criar > Substitua as informaÃ§Ãµes do usuÃ¡rio modelo pelas informaÃ§Ãµes do novo usuÃ¡rio (Senha: 123456) > Clique em Salvar 
+					> Logue com o usuÃ¡rio criado para verificaÃ§Ã£o > Retorne ao seu usuÃ¡rio > Cadastro > Clientes > Pesquisar 
+					> Clique para que a visualizaÃ§Ã£o seja completa (16 no total) > Selecione o hospital que serÃ¡ dada a permissÃ£o ao usuÃ¡rio 
+					> Editar > No campo usuÃ¡rio procure pelo usuÃ¡rio criado > Selecione o usuÃ¡rio e clique em Salvar 
+					> FaÃ§a isso com todos os hospitais que o usuÃ¡rio tiver acesso.
+					<br></br>
+				</p>
+				
+			<h2 id="criar_usuario_sga"><span class="label label-warning">Criar usuÃ¡rio SGA</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Acesse o <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > AdministraÃ§Ã£o > UsuÃ¡rio > Clique em Novo usuÃ¡rio
+					> Preencha as informaÃ§Ãµes > Clique em <b>Cadastrar</b>.
+					<br></br>
+				</p>
+				
+			<h2 id="criar_usuario_mha"><span class="label label-warning">Criar usuÃ¡rio MHA </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Acesse o <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> >  AdministraÃ§Ã£o do Sistema > Controle de Acesso 
+					> UsuÃ¡rio > Pesquise pelo usuÃ¡rio modelo > Verifique as permissÃµes do mesmo > Clique em Novo
+					<br><b>CÃ³digo:</b> DRT do novo usuÃ¡rio 
+					<br><b>DescriÃ§Ã£o:</b> Nome do usuÃ¡rio
+					<br><b>Senha:</b> 123456
+					<br><b>Status:</b> ATV
+					<br><b>Expirar senha:</b> NÃ£o
+					<br><b>Expirar (Dias):</b> 0 
+					<br><b>Senha Forte:</b> NÃ£o 
+					<br><b>Tamanho da senha:</b> 0
+					<br><b>Permitir S. SimultÃ¢neas:</b> NÃ£o
+					<br><b>Tempo:</b> 0
+					<br><b>Tipo do acesso:</b> Caso o acesso seja para apenas coletor, apenas computador ou ambos
+					<br><b>Tipo de AutenticaÃ§Ã£o:</b> Deixar da mesma forma que o usuÃ¡rio modelo 
+					<br>Ao finalizar o cadastro clique em <b>Salvar AlteraÃ§Ãµes.</b><br>
+					
+					<br>Em seguida acesse AdministraÃ§Ã£o do Sistema > Controle de Acesso > UsuÃ¡rios por Planta 
+					> Selecione a planta 326 e clique em PermissÃµes > Selecione o usuÃ¡rio da caixa da direita e o envie para a caixa central.<br>
 
-			<br>Usuário: 26000084
-			<br>Senha: 123
+					<br>Se o usuÃ¡rio for possuir acesso Web >  AdministraÃ§Ã£o do Sistema > Controle de Acesso 
+					> PermissÃµes de UsuÃ¡rio > Selecione o grupo Administradores 
+					> Clique em PermissÃµes > Selecione o usuÃ¡rio da caixa da direita e o envie para a caixa central.<br>
 
-			<br>Ferramentas > Executar Programa > \\secdts11apl\ERP\Especificos\ems206\esp\esft0009.r > OK
+					<br>Caso o acesso seja apenas coletor > AdministraÃ§Ã£o de Sistema > Controle de Acesso â€“ PDA 
+					> UsuÃ¡rio PermissÃ£o Grupo > Clique em ADM > Selecione o usuÃ¡rio da caixa da direita e o envie para a caixa central > Salvar.<br>
+				</p>
+			
+			<h2 id="finalizar_empenho"><span class="label label-warning">Finalizar Empenho </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Assim que solicitado, acesse o <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> 
+						> OperaÃ§Ã£o > Empenho > Procurar Empenho > Editar > Finalizar > OK.
+				</p>
+			
+			<h2 id="cadastrar_itens_portal"><span class="label label-warning">Cadastrar Itens no Portal </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Assim que solicitado pela qualidade, abra a planilha (T:\Cadastro\RG.GQ.13.001- CADASTRO DE MATERIAL) 
+					> Copie o CDITEM > Acesse o <a href="http://172.22.0.33/" target="_blank">Portal</a>  > Cadastro > Artigos 
+					> Procure o Item para verificar se jÃ¡ existe o mesmo 
+					> Caso nÃ£o haja clique em Criar > <b>ReferÃªncia:</b> CDITEM > <b>DescriÃ§Ã£o:</b> Copie da planilha a descriÃ§Ã£o do item 
+					> AbreviaÃ§Ã£o > Cole a descriÃ§Ã£o > <b>Unidade de medida:</b> verifique a unidade de medida da planilha 
+					> <b>SIAFISICO:</b> Copie da planilha > Clique em Criar. Caso o SIAFISICO nÃ£o esteja cadastrado, tera de ser feito o
+					<a href="#cadastrar_siafisico"> Cadastro do SIAFISICO </a>
+					<br>Envie um <a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br; cadastros@ceadis.org.br"> e-mail</a> para 
+					<a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br"> Tecnologia</a>, 
+					<a href="mailto:cadastros@ceadis.org.br"> Cadastros</a>,
+					<a href="mailto:qualidade@ceadis.org.br"> Qualidade</a> com as informaÃ§Ãµes necessÃ¡rias e requisitando o cadastro do item.
+					<br></br>
+				</p>
+			
+			<p><h2 id="cadastrar_siafisico"><span class="label label-warning">Cadastrar SIAFISICO </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2></p>
+				<p>
+					<br>Assim que solicitado pela qualidade, ou quando houver a necessidade de cadastrar SIAFISICO, entrar no site do 
+					<a href="http://www.bec.sp.gov.br/BEC_Catalogo_UI/CatalogoPesquisa3.aspx" target="_blank"> BEC</a>
+					e procurar pelo SIAFISICO no campo <b>CÃ³digo do Item</b>.
+					Retorne ao <a href="http://172.22.0.33/" target="_blank">Portal</a> > Cadastro > Siafisico â€“ Materiais > Clique no botÃ£o Criar 
+					> No campo cÃ³digo copie o cÃ³digo cujo qual foi solicitado o cadastro. 
+					No campo nome, copie o nome do endereÃ§o acima, e no campo descriÃ§Ã£o copie a descriÃ§Ã£o completa. 
+					> Clique em Salvar.
+					Entre no produto e cadastre o SIAFISICO no produto para que seja vinculado ao mesmo.
+					<br></br>
+				</p>
+			
+			<h2 id="ativar_inativar_artigo"><span class="label label-warning">Ativar ou Inativar Artigo </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Abra a planilha que terÃ¡ o item para ser ativado/inativado (T:\Cadastro\RG.GQ.13.001- CADASTRO DE MATERIAL) 
+					> Copie o CDITEM > Acesse o <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Cadastro > Artigos 
+					> Selecione o Item > Clique em Ativar / Inativar. 
+					Caso o mesmo possua abastecimento pendente, realizar o procedimento de  <a href="#abastecer_pedido"> Abastecer pedidos </a>
+					<br>Caso haja empenhos que impeÃ§am que inative-o entre em contato com a Qualidade para resoluÃ§Ã£o do mesmo.
+					<br>Ao final da ativaÃ§Ã£o/inativaÃ§Ã£o mandar um 
+					<a href="mailto:tecnologia@ceadis.org.br; qualidade@ceadis.org.br; cadastros@ceadis.org.br"> e-mail</a> para 
+					<a href="mailto:tecnologia@ceadis.org.br"> Tecnologia</a>, 
+					<a href="mailto:cadastros@ceadis.org.br"> Cadastros</a>,
+					<a href="mailto:qualidade@ceadis.org.br"> Qualidade</a> com as informaÃ§Ãµes para que possa ser dada continuidade ao processo.
+					<br>
+				</p>
+			
+			<h2 id="abastecer_pedido"><span class="label label-warning">Abastecer pedido </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Ao inativar um item e o mesmo consta com pendÃªncia no abastecimento do mesmo, 
+					verifique o pedido e se ele for de uma data anterior a 3 dias, 
+					faÃ§a uma anÃ¡lise para verificar a possibilidade de abastecÃª-lo. Caso sim, acesse o 
+					<a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > OperaÃ§Ã£o > Abastecer Pedidos 
+					> Procure pelo pedido e clique em Marcar como Abastecido. Agora vocÃª poderÃ¡ inativar o item.
+					<br>
+				</p>
+			
+			<h2 id="reimportar_ordem"><span class="label label-warning">Reimportar Ordem com quantidade divergente </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>No <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > OperaÃ§Ã£o > Empenho > Selecione o hospital referente a ordem 
+					> OperaÃ§Ã£o > Empenho > Digite o nÃºmero da OC / empenho > Selecione e clique em Consultar 
+					> Verifique as quantidades e as informaÃ§Ãµes e confira junto ao documento pdf enviado anexado ao chamado 
+					> caso haja divergÃªncia verifique o empenho gerado pelo hospital no FileZila > Selecione o hospital 
+					> Entre na pasta referente aos arquivos de OC > FaÃ§a uma cÃ³pia local dos arquivos efetuados na data 
+					> procure pela OC que estÃ¡ divergente > Verifique se a mesma estÃ¡ correta 
+					>  Caso esteja envie-a para WinSCP para que suba novamente no servidor de forma correta 
+					
+					<h3> P.S.: Verifique se a OC nÃ£o consta agendamento > Caso a OC demore para ir ao portal verifique a tela de problemas 
+					(OperaÃ§Ã£o > Problemas > Cole a OC no campo palavra-chave e veja o problema ocorrido).
+					<br>P.S.: Caso algum item esteja inativo, 
+					informe o usuÃ¡rio para que o mesmo entre em contato com a qualidade para que possa <a href="#ativar_inativar_artigo"> ativar </a>novamente o item. 
+					Assim que efetuar o procedimento, verifique se a divergÃªncia foi resolvida no portal reimportando o mesmo. </h3>
+					<br>
+				</p>
+				
+			<h2 id="excluir_cancelar_pedido"><span class="label label-warning">Excluir ou cancelar pedido </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>No <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > OperaÃ§Ã£o > Pedido > Selecione o hospital correspondente 
+					> procure o nÃºmero do pedido > selecione o mesmo e clique em excluir > Selecione o motivo para a exclusÃ£o 
+					> Caso haja uma mensagem de erro > Retorne > Selecione o pedido > Editar > Altere a situaÃ§Ã£o do pedido para â€œCanceladoâ€ 
+					> Salve, o pedido serÃ¡ alterado para cancelado.
+					<br>
+				</p>
+				
+			<h2 id="check_infra_manha"><span class="label label-warning">Checklist Infra - ManhÃ£ </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Entrar no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> e ir na Ã¡rea de Checklist,
+					selecionar o <b>Checklist SISTEMAS â€“ Checklist ManhÃ£</b>, e verificar os seguintes pontos:<br>
+					<br><b>IMPRESSORA - IMP-ADM-01:</b> Acessar a <a href="http://172.22.2.1/general/status.html" target="_blank">Impressora ADM-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-RH-02:</b> Acessar a <a href="http://172.22.2.2/main/main.html" target="_blank">Impressora RH-02.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-REC-02:</b> Acessar a <a href="http://172.22.2.3/general/status.html" target="_blank">Impressora REC-02.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-EXP-01:</b> Acessar a <a href="http://172.22.2.4/general/status.html" target="_blank">Impressora EXP-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-GAL-01:</b> Acessar a <a href="http://172.22.2.5/general/status.html" target="_blank">Impressora GAL-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-GAL-02:</b> Acessar a <a href="http://172.22.2.6/general/status.html" target="_blank">Impressora GAL-02.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>WCS:</b> Acessar o <a href="http://172.22.2.6/general/status.html" target="_blank">WCS</a>
+						e utilizar o usuÃ¡rio ceadis e a senha 10112023 para acessar e verificar se o sistema estÃ¡ OK.
+					<br><b>Envio de e-mail para e-mail externo:</b> Todos os acessos externos estÃ£o bloqueados, portanto coloque ERRO.
+					<br><b>Recebimento de e-mail externo:</b> Todos os acessos externos estÃ£o bloqueados, portanto coloque ERRO.
+					<br><b>Mensagem de recebimento de email RH:</b> Todos os acessos externos estÃ£o bloqueados, portanto coloque ERRO.
+					<br><b>Verificar Tarifador esta coletando informaÃ§Ã£o da data atual:</b> 
+						Abra o mstsc e acesse o 192.168.31.64 com o <b>usuÃ¡rio:</b> usuario_tarifador e a <b>senha:</b> tarif@dor.
+						Verificar se os horÃ¡rios e a conexÃ£o estÃ£o OK.
+					<br><b>Checar Black List:</b> Acessar o 
+						<a href="http://mxtoolbox.com/SuperTool.aspx?action=blacklist%3aceadis.org.br&run=toolpage " target="_blank">Monitor</a>
+						e verificar se os e-mails corporativos entraram na blacklist.	
+					<br><b>Checar Radio Nextel "ATENÃ‡ÃƒO":</b> verificar se o rÃ¡dio Nextel estÃ¡ com bateria e checar sinal de rede do mesmo.
+					<br><b>Checar ar condicionado fisicamente "ATENÃ‡ÃƒO":</b> verificar se os ar condicionados da sala do servidor 
+						estÃ£o funcionando corretamente.
+					<br><b>DVRs:</b> acessar com o ip 172.22.4.119, entrar no SIM (<b>login:</b> Admin <b>senha:</b> Admin) 
+						e verificar se todos os DVRs estÃ£o OK.
+					<br><b>Verificar HorÃ¡rio de DVRÂ´s :</b> verificar se o horÃ¡rio dos DVR's estÃ£o similares ao horÃ¡rio da mÃ¡quina, caso nÃ£o, 
+						sincronizar o mesmo.
+						
+					<br><b>Verificar HorÃ¡rio de RelÃ³gios de ponto:</b> verificar se o relÃ³gio de ponto estÃ¡ com o horÃ¡rio correto.
+					<br><b>Verificar HorÃ¡rio de Catracas:</b> verificar se o horÃ¡rio das catracas estÃ¡ correto.
+					<br><b>Verificar bobina do relÃ³gio de ponto da OperaÃ§Ã£o:</b> abrir relÃ³gio de ponto da OperaÃ§Ã£o, 
+						e verificar se a bobina Ã© sufiente para o funcionamento diÃ¡rio.
+					<br><b>Verificar bobina do relÃ³gio de ponto do Administrativo:</b> abrir relÃ³gio de ponto do Administrativo, 
+						e verificar se a bobina Ã© sufiente para o funcionamento diÃ¡rio.
+				</p>
+				
+			<h2 id="check_infra_tarde"><span class="label label-warning">Checklist Infra - Tarde </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Entrar no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> e ir na Ã¡rea de Checklist,
+					selecionar o <b>Checklist SISTEMAS â€“ Checklist ManhÃ£</b>, e verificar os seguintes pontos:<br>
+					
+					<br><b>E-mail para e-mail externo:</b> Todos os acessos externos estÃ£o bloqueados, portanto coloque ERRO.
+					<br><b>WCS - Cacti:</b> Acessar o <a href="http://172.22.2.6/general/status.html" target="_blank">WCS</a>
+						e utilizar o usuÃ¡rio ceadis e a senha 10112023 para acessar e verificar se o sistema estÃ¡ OK.
+					<br><b>Enviar e-mail para NTUX - FITAS BACKUP:</b>
+					<br><b>Verificar Ar Condicionado da sala de Servidores:</b> verificar se os ar condicionados da sala do servidor 
+						estÃ£o funcionando corretamente.
+					<br><b>Verificar planilha de Itens para cadastro:</b> Abrir a planilha de cadastro e verificar se a mesma estÃ¡ OK.
+					<br><b>IMPRESSORA - IMP-ADM-01:</b> Acessar a <a href="http://172.22.2.1/general/status.html" target="_blank">Impressora ADM-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-RH-01:</b> Acessar a <a href="http://172.22.2.2/main/main.html" target="_blank">Impressora RH-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-REC-02:</b> Acessar a <a href="http://172.22.2.3/general/status.html" target="_blank">Impressora REC-02.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-EXP-01:</b> Acessar a <a href="http://172.22.2.4/general/status.html" target="_blank">Impressora EXP-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-GAL-01:</b> Acessar a <a href="http://172.22.2.5/general/status.html" target="_blank">Impressora GAL-01.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>IMPRESSORA - IMP-GAL-02:</b> Acessar a <a href="http://172.22.2.6/general/status.html" target="_blank">Impressora GAL-02.</a>
+						E checar se a mesma encontra-se funcionando corretamente.
+					<br><b>E-mail RH:</b> Todos os acessos externos estÃ£o bloqueados, portanto coloque ERRO.
+					<br><b>Tarifador:</b> Abra o mstsc e acesse o 192.168.31.64 com o <b>usuÃ¡rio:</b> usuario_tarifador e a <b>senha:</b> tarif@dor.
+						Verificar se os horÃ¡rios e a conexÃ£o estÃ£o OK.
+					<br><b>Checar Black List:</b> Acessar o 
+						<a href="http://mxtoolbox.com/SuperTool.aspx?action=blacklist%3aceadis.org.br&run=toolpage " target="_blank">Monitor</a>
+						e verificar se os e-mails corporativos entraram na blacklist.
+					<br><b>Gerar relatÃ³rio de estoque MHA:</b> Verificar se a operaÃ§Ã£o jÃ¡ finalizou a separaÃ§Ã£o 
+						(<a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> > Processos > SeparaÃ§Ã£o > Fila de SeparaÃ§Ã£o 
+						(Verificar se hÃ¡ alguma separaÃ§Ã£o em andamento ou pendente)), Caso ainda nÃ£o tenha sido finalizado atÃ© o final do expediente,
+						gerar no prÃ³ximo dia, caso nÃ£o <a href="#gerar_estoque_mha"> Gerar Estoque MHA Completo (MHA)</a>.
+					<br><b>DVRs:</b> acessar com o ip 172.22.4.119, entrar no SIM (<b>login:</b> Admin <b>senha:</b> Admin) 
+						e verificar se todos os DVRs estÃ£o OK.
+					<br><b>Verificar bateria e estado do Tablet Samsung:</b> Checar se a bateria do Tablet Samsung (Sala do Servidor) estÃ¡ OK.
+					<br><b>Verificar se Datacenter esta fechado:</b> ApÃ³s checar todos os pontos na sala do servidor, 
+						verificar se a mesma encontra-se devidamente fechada.
+					<br><b>Verificar HorÃ¡rio de DVRÂ´s :</b> verificar se o horÃ¡rio dos DVR's estÃ£o similares ao horÃ¡rio da mÃ¡quina, caso nÃ£o, 
+						sincronizar o mesmo.
+					<br><b>Verificar HorÃ¡rio de RelÃ³gios de ponto:</b> verificar se o relÃ³gio de ponto estÃ¡ com o horÃ¡rio correto.
+					<br><b>Verificar HorÃ¡rio de Catracas:</b> Verificar se o horÃ¡rio das catracas estÃ¡ correto.
+					<br><b>Bloquear usuÃ¡rio suporte.mha:</b> Acessar AD e bloquear usuÃ¡rio.
+					
+				</p>
+				
+				
+			<h2 id="check_sistemas"><span class="label label-warning">Checklist de Sistemas </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>
+					Entrar no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> e ir na Ã¡rea de Checklist,
+					selecionar o <b>Checklist SISTEMAS â€“ Checklist ManhÃ£</b>, e verificar os seguintes pontos:<br>
+					<br><b>Portal â€“ Estoque Web:</b> verificar se o mesmo encontra-se em funcionamento fazendo login.
+					<br><b>Sistema â€“ SCE:</b> verificar se o mesmo encontra-se em funcionamento fazendo login.
+					<br><b>Sistema â€“ MHA:</b> verificar se o mesmo encontra-se em funcionamento fazendo login.
+					<br><b>Telnet â€“ MHA:</b> abrir cmd e digitar telnet 172.22.0.43, acesse com o seu <b>UsuÃ¡rio:</b> DRT,
+						<b>Senha:</b> Senha cadastrada anteriormente, <b>Companhia:</b> 1, <b>Planta:</b> 326, 
+						<b>DepÃ³sito:</b> 1. Verifique se estÃ¡ funcionando normalmente.
+					<br><b>Planilha de Cadastro de Artigo:</b> abrir a planilha de cadastro e verificar se a mesma estÃ¡ OK.
+					<br><b>E-mail aniversariante:</b> verificar se hÃ¡ pessoas que fazem aniversÃ¡rio na data,
+						e verificar se foi enviado o e-mail com o aniversariante. Caso nÃ£o, marque como ERRO.
+					<h3>P.S.: Somente serÃ¡ enviado e-mail, caso o aniversariante seja da sua unidade.</h3>
+					<b>Verificar planilha de estoque MHA:</b> Acessar a pasta T:\Estoque\MHA 
+					e verificar se no dia anterior ou Ãºltimo dia em que teve movimentaÃ§Ã£o de separaÃ§Ã£o e expediÃ§Ã£o se a planilha consta na pasta.<br>
+					<br>Ao tÃ©rmino das verificaÃ§Ãµes, poderÃ¡ ser inserido algumas observaÃ§Ãµes caso haja, caso nÃ£o apenas coloque algumas consideraÃ§Ãµes.
+				</p>
+				
+			<h2 id="check_ruptura"><span class="label label-warning">Checklist Ruptura </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Acesse a unidade de rede Z:
+					<br>Verificar em todos os hospitais nas pastas (*Hospital*\_EstoqueWeb\RelatÃ³rio\Ruptura de Estoque\MÃªs correspondente\)
+					<br>E verifique se a planilha estÃ¡ com tamanho similar as demais, caso nÃ£o esteja tente 
+					<a href="#gerar_ruptura_estoque"> gerar </a> um novo relatÃ³rio no 
+					<a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a>, pois no dia anterior ainda nÃ£o havia sido finalizado a operaÃ§Ã£o.
+					<br>Caso esteja OK, preencher o checkslit de acordo no <a href="http://172.22.0.30/sga/" target="_blank">SGA</a>
+					<br>
+				</p>
+				
+			<h2 id="check_tram"><span class="label label-warning">Checklist TRAM (DataSul11)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Acesse o DataSul11 (T:\Publico\DATASUL\TOTVS11\DataSul 11.rdp):
+					
+					<br>Login: matriz-2000\opr.dtsul.ceadis11 
+					<br>Senha: seconci
+					
+					<br>Clique em Lembrar minhas credenciais, em seguida marque a opÃ§Ã£o nÃ£o perguntar novamente e clique em Conectar.
 
-			Estabelecimento = 326
-			Serie: 1
-			Nota Fiscal: 
-			Emissão: Data (dia anterior)
-			
-			<br>Emitente:
-			
-			<br>SP – 1271
-			<br>AM – 1048
-			<br>IS – 9
-			<br>CO – 16
-			<br>VA – 4<br>
-			
-			<br>\\172.16.0.56\Especificos\ems206\integracao\prod\arquivos - Saída dos arquivos<br>
-			
-			<br>Volta ao FTP, clica na unidade de rede referente (X:), em todos os hospitais acessa a unidade de 
-			rede mapeada onde os arquivos serão exportados e os importe na pasta do servidor FTP do hospital correspondente.
+					<br>UsuÃ¡rio: 26000084
+					<br>Senha: 123
 
-			<br>Retorne ao <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Checklist > Sistemas - TRAM > Preencha de acordo com os testes.<br>
-		</p>
-		
-	<h2 id="gerar_ruptura_estoque"><span class="label label-warning">Gerar Estoque (Ruptura)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>No <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Selecione o hospital cujo qual deseja gerar o relatório 
-			> Relatórios > Estoque > Ruptura de Estoque 
-			> Coloque a data referente ao relatório que deseja criar 
-			> Excel > Salva na pasta referente ao hospital. 
-			<br>Verificar o relatório de ruptura Z:\X_EstoqueWeb\Relatório\Ruptura de Estoque\Mês atual\último dia de Operação).
-			<br>
-		</p>
-	
-	<h2 id="gerar_estoque_mha"><span class="label label-warning">Gerar Estoque MHA (Completo) </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
-		<p>
-			<br>No <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> > Relatórios > Estoque > Estoque básico
-			> Clicar em Visualizar > selecionar o disquete localizado no canto superior esquerdo
-			> Selecione o formato MS Excel 97-2000> Clicar em ok> Abra o arquivo que foi gerado em Excel
-			> Salvar como > Selecione a pasta de destino> Salvar com o nome padrão.</br>
-			<br>
-			<br>
-			<br>
-		</p>
-		
-		<div class="container col-md-12">
-			<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">              
-         	<div class="col-md-12">
-             <footer>
-				<br>
-				<p><b>&copy; ..:: CEADIS - TECNOLOGIA DA INFORMAÇÃO ::..</b></p>
-			</footer>  
-                                                  
-          	</div>
-			</nav>			
-		</div>
-		
-		
-		</div>	
-		
-  </body>
-   
+					<br>Ferramentas > Executar Programa > \\secdts11apl\ERP\Especificos\ems206\esp\esft0009.r > OK
+
+					Estabelecimento = 326
+					Serie: 1
+					Nota Fiscal: 
+					EmissÃ£o: Data (dia anterior)
+					
+					<br>Emitente:
+					
+					<br>SP â€“ 1271
+					<br>AM â€“ 1048
+					<br>IS â€“ 9
+					<br>CO â€“ 16
+					<br>VA â€“ 4<br>			
+					<br>\\172.16.0.56\Especificos\ems206\integracao\prod\arquivos - SaÃ­da dos arquivos<br>
+					
+					<br>Volta ao FTP, clica na unidade de rede referente (X:), em todos os hospitais acessa a unidade de 
+					rede mapeada onde os arquivos serÃ£o exportados e os importe na pasta do servidor FTP do hospital correspondente.
+
+					<br>Retorne ao <a href="http://172.22.0.30/sga/" target="_blank">SGA</a> > Checklist > Sistemas - TRAM > Preencha de acordo com os testes.<br>
+				</p>
+				
+			<h2 id="gerar_ruptura_estoque"><span class="label label-warning">Gerar Estoque (Ruptura)</span> <a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>No <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> > Selecione o hospital cujo qual deseja gerar o relatÃ³rio 
+					> RelatÃ³rios > Estoque > Ruptura de Estoque 
+					> Coloque a data referente ao relatÃ³rio que deseja criar 
+					> Excel > Salva na pasta referente ao hospital. 
+					<br>Verificar o relatÃ³rio de ruptura \\172.22.0.20\Biblioteca\X_EstoqueWeb\RelatÃ³rio\Ruptura de Estoque\MÃªs atual\Ãºltimo dia de OperaÃ§Ã£o).
+					<br>
+				</p>
+			
+			<h2 id="gerar_estoque_mha"><span class="label label-warning">Gerar Estoque MHA (Completo) </span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>No <a href="http://172.22.0.42/ArMHAzena/" target="_blank">ArMHAzena</a> > RelatÃ³rios > Estoque > Estoque bÃ¡sico
+					> Clicar em Visualizar > selecionar o disquete localizado no canto superior esquerdo
+					> Selecione o formato MS Excel 97-2000> Clicar em ok> Abra o arquivo que foi gerado em Excel
+					> Salvar como > Selecione a pasta de destino> Salvar com o nome padrÃ£o.</br>
+
+				</p>
+				
+			<h2 id="montar_bibliotecas_portal"><span class="label label-warning">Montar Biblioteca Portal</span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br>Caso no <a href="http://172.22.0.33/ceadis/" target="_blank">Portal</a> a Biblioteca nÃ£o tenha subido (OperaÃ§Ã£o > Biblioteca).
+					VÃ¡ no WinSCP e reinicie o puppy (Ctrl+P) na pasta <i> opt/broker/mnt </i> execute o serviÃ§o <i> montar.sh </i>, assim todas as bibliotecas iniciarÃ£o.
+				</p>
+
+			<h2 id="cancelar_nota_datasul"><span class="label label-warning">Cancelar Nota Fiscal no DataSul</span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br> Verifique no site da <a href="http://www.nfe.fazenda.gov.br/portal/consulta.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=" target="_blank">Receita federal</a>
+						se a Nota Fiscal foi cancelada no SEFAZ.
+					<br>Consulte a Nota Fiscal na tela <b>FT0909 - Consulta de Notas Fiscais EletÃ´nicas</b>, verifique a <i>Natureza da OperaÃ§Ã£o</i>.
+					<bR>Na tela <b>CD0606 - Recebimento Natureza da OperaÃ§Ã£o</b> e clique em <u>VÃ¡ Para</u>, e digite a mesma Natureza de OperaÃ§Ã£o que estÃ¡ na tela <b>FT0909</b>. Ao alterar a Natureza de OperaÃ§Ã£o,
+							Clique em <u>Altera ocorrÃªncia corrente</u> na mensagem de alerta que aparecerÃ¡, clique em <u>OK</u>, na aba <i>Adicionais</i> e desabilite a opÃ§Ã£o <b>Gerar Nota de Faturamento</b>.
+					<br> Na tela <b>RE0402 - DesatualizaÃ§Ã£o Documentos</b> preencha as informaÃ§Ãµes da Nota. Na aba <i>ParÃ¢metros</i>, habilite a opÃ§Ã£o <b>Desatualiza Nota Fiscal de Faturamento</b>, 
+							em seguida clique em <b>Executar</b>.
+					<br> Pesquise pela Nota Fiscal na tela <b>RE1001 - ManutenÃ§Ã£o de Documentos</b>.
+					<br> Clique em <u>Executar programa</u> e execute o programa <b>\\secdts11apl\ERP\Especificos\ems206\esp\spp\rep\spre100.r</b> e informe o <u>CÃ³digo de SeguranÃ§a</u>, 
+						em seguida preencha as informaÃ§Ãµes contidas na tela <b>RE1001</b> e informe o protocolo presente no site da 
+							<a href="http://www.nfe.fazenda.gov.br/portal/consulta.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=" target="_blank">Receita federal</a>.
+				</p>
+
+			<h2 id="restartar_portal_produÃ§Ã£o"><span class="label label-warning">Restartar Portal PorduÃ§Ã£o</span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<br> Caso o Portal nÃ£o esteja funcionando normalmente, vocÃª pode restaurÃ¡-lo. Acesse o Putty (Ctrl + P) dentro do WinSCP. Digite o comando <i> cd / </i> | <i> cd opt/deploy </i>, execute a bash 
+						<b>restart-prod.sh</b> da seguinte maneira: <i> bash restart-prod.sh</i>. Aguarde alguns minutos para retorno total da aplicaÃ§Ã£o. 
+				</p>
+
+			<h2 id="lista_de_links"><span class="label label-warning">Lista de Links</span><a href="#topo"> <img src="img/seta.jpg" alt="topo" title="Topo" border="none" align="right"/></a></h2>
+				<p>
+					<ul>
+
+						<li> <b>172.22.0.92:2458 </b></li>
+							<ul>
+								<li> <a href="http://172.22.0.92:2458/sga/" target="_blank"> SGA </a> </li>
+								<li> <a href="http://172.22.0.92:2458/ceadis/" target= "_blank"> Portal </a> </li>
+								<li> <a href="http://172.22.0.92:2458/SCE" target="_blank"> SCE </a> </li>
+								<li> <a href="http://177.184.203.235:8088/estoque/" target="_blank"> Lois Sorocaba  - ProduÃ§Ã£o</a> </li>
+								<li> <a href="http://177.184.203.235:8089/estoque/" target="_blank"> Lois Sorocaba  - HomolgaÃ§Ã£o</a> </li>
+								<li> <a href="http://189.56.93.218/udtp/index.action" target="_blank"> Portal UDTP (externo)</a> </li>
+							</ul>
+
+						<li> <b>172.22.0.26:2460 </b></li>
+							<ul>
+								<li> <a href="http://172.22.0.26:2460/sga/"> SGA </a> </li>
+								<li> <a href="http://172.22.0.26:2460/estoque" target="_blank"> Lois SolicitaÃ§Ã£o de Materiais </a> </li>
+								<li> <a href="http://172.22.0.26:2460/ceadis" target="_blank"> Portal </a> </li>
+								<li> <a href="http://172.22.0.137/estoque/" target="_blank"> Lois SolicitaÃ§Ã£o de Materiais - HomologaÃ§Ã£o</a> </li>
+							</ul>
+					</ul>
+					<br>
+					<br>
+					<br>
+				</p>
+
+					<div class="container col-md-12">
+						<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">              
+							<div class="col-md-10">
+								<footer>
+									<br>
+									<p><b> &copy; ..:: CEADIS - TECNOLOGIA DA INFORMAÃ‡ÃƒO ::..</b></p>
+								</footer>
+							</div>
+						</nav>			
+					</div>
+
+		</div>		
+	</body>
 </html>
